@@ -1,0 +1,42 @@
+var playerName = ""
+var playerQuestion = "Ты действительно так сильно хочешь стать разработчиком?"
+var randomNumber = Int.random(in: 1...9)
+var eightBall: String
+
+switch randomNumber {
+  case 1:
+    eightBall = "Ессесно"
+  case 2:
+    eightBall = "Увеен, что да"
+  case 3:
+    eightBall = "Ну, да"
+  case 4:
+    eightBall = "Спроси что по-легче"
+  case 5:
+    eightBall = "Давай потом, а?"
+  case 6:
+    eightBall = "Не хочу об жтом говорить"
+  case 7:
+    eightBall = "Пфффх, нет!"
+  case 8:
+    eightBall = "Лол, нет"
+  case 9:
+    eightBall = "Отвали, а?"
+  default:
+    eightBall = "Забей"
+}
+
+
+playerName.isEmpty ? print("Вопрос: \(playerQuestion) - \(eightBall)") : print("\(playerName) спрашивает: \(playerQuestion). Ответ: \(eightBall)")
+
+
+
+
+
+
+
+
+
+
+
+
